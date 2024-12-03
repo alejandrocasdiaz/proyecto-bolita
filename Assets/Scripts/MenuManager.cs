@@ -15,6 +15,8 @@ public class MenuManager : MonoBehaviour
     public GameObject MainMenu;
     public GameObject ExitMenu;
 
+    public Text playButtonText;
+
     private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,17 @@ public class MenuManager : MonoBehaviour
         isSoundOn = PlayerPrefs.GetInt("SoundOn", 1) == 1;
         UpdateSoundButtonImage();
         AudioListener.volume = isSoundOn ? 1 : 0;
+
+        int highestLevel = PlayerPrefs.GetInt("HighestLevel", 3);
+
+        if (highestLevel > 3)
+        {
+            playButtonText.text = "CONTINUAR";
+        }
+        else
+        {
+            playButtonText.text = "JUGAR";
+        }
     }
 
     // Update is called once per frame
@@ -32,7 +45,9 @@ public class MenuManager : MonoBehaviour
 
     public void StartButton()
     {
-        SceneManager.LoadScene(3);
+        int highestLevel = PlayerPrefs.GetInt("HighestLevel", 3);
+        int levelToLoad = (highestLevel > 3) ? highestLevel : 3;
+        SceneManager.LoadScene(levelToLoad);
     }
 
     public void LevelsButton()

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7257B17B-F6B0-5A16-4330-CA5C56772F85}</ProjectGuid>
+    <ProjectGuid>{856D6B13-D1C7-C1C9-E2B9-02CCA3A9FCCA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Camara.cs" />
-    <Compile Include="Assets\Scripts\MiPrimerScript.cs" />
     <Compile Include="Assets\Scripts\Colisiones.cs" />
   </ItemGroup>
   <ItemGroup>

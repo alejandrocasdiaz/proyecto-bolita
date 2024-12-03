@@ -2081,6 +2081,7 @@ MonoBehaviour:
   soundOffSprite: {fileID: 21300000, guid: 8d4205774e309d34c81fb61e754e6520, type: 3}
   MainMenu: {fileID: 265425523}
   ExitMenu: {fileID: 929803276}
+  playButtonText: {fileID: 42821990}
 --- !u!4 &1879107877
 Transform:
   m_ObjectHideFlags: 0
